@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import rospy
@@ -11,7 +11,9 @@ import itertools
 
 # import sub directory
 import sys
-sys.path.append('../')
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../'))
+# sys.path.append('../')
 
 from collections import Counter
 from collections import deque
